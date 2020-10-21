@@ -5,6 +5,7 @@
 }
 body {
   font-family: sans-serif;
+  background-color: #bc3838;
 }
 .container {
   width: 1170px;
@@ -12,3 +13,50 @@ body {
 }
 
 /* utilities */
+.text-center {
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: #fff;
+}
+
+.dati {
+  background-color: #fff;
+  border-radius: 5px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 0 10px;
+}
+input,
+select {
+  display: block;
+  margin-top: 20px;
+}
+.bottoni {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+button {
+  padding: 5px 10px;
+}
+#risultato {
+  margin-top: 50px;
+}
+table {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+table tr td {
+  text-transform: uppercase;
+
+}
