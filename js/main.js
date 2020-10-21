@@ -20,23 +20,23 @@ generaBottone.addEventListener("click", function() {
   var offerta = "biglietto normale";
 
   if (fasciaEta == "minorenne") {
-    costoBiglietto = costoBiglietto * 0.2;
+    costoBiglietto -= costoBiglietto * 0.2;
     offerta = "sconto minorenni"
   } else if (fasciaEta == "over65") {
-    costoBiglietto == costoBiglietto * 0.4;
+    costoBiglietto -= costoBiglietto * 0.4;
     offerta = "sconto over-65"
-
-    costoBiglietto = costoBiglietto.toFixed(2) + euro;
   }
+  costoBiglietto = costoBiglietto.toFixed(2) + "euro";
 
   // Carrozza
   var carrozza = Math.floor( Math.random() * 100) + 1;
   // codice-cp
   var codiceCp = Math.floor( Math.random() * (100000 - 90000) ) + 90000;
-})
+
 
   document.getElementById('nome-passeggero').innerHTML = nome;
   document.getElementById('offerta').innerHTML = offerta;
   document.getElementById('carrozza').innerHTML = carrozza;
   document.getElementById('codice-cp').innerHTML = codiceCp;
-  document.getElementById('costo').innerHTML = offerta;
+  document.getElementById('costo').innerHTML = costoBiglietto;
+})
