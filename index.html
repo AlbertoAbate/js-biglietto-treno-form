@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>biglietto treno js</title>
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calcola il prezzo del biglietto</h1>
+      <div class="dati">
+        <div class="row">
+          <div class="col">
+            <label for="nome">Nome e Cognome</label>
+            <input type="text" id="nome" nome="nome" placeholder="inserisci il tuo nome">
+          </div>
+          <div class="col">
+            <label for="km">Km da percorrere</label>
+            <input type="number" id="km" name="km" placeholder="inserisci i km">
+          </div>
+          <div class="col">
+            <label for="fascia-eta">Fascia d'età</label>
+            <select name="fascia-eta" id="fascia-eta">
+              <option value="minorenne">Minorenne</option>
+              <option value="maggiorenne">Maggiorenne</option>
+              <option value="over65">Over 65</option>
+            </select>
+          </div>
+        </div>
+        <div class="bottoni">
+          <button id="generaBottone">Genera</button>
+          <button id="annullaBottone">Annulla</button>
+        </div>
+      </div>
+
+      <div id="risultato">
+        <h2>Il tuo biglietto</h2>
+        <table>
+          <tr>
+            <th>Nome Passeggero</th>
+            <th>Offerta</th>
+            <th>Carrozza</th>
+            <th>Codice CP</th>
+            <th>Costo Biglietto</th>
+          </tr>
+          <tr>
+            <td>
+              <span id="nome-passeggero"></span>
+            </td>
+            <td>
+              <span id="offerta"></span>
+            </td>
+            <td>
+              <span id="carrozza"></span>
+            </td>
+            <td>
+              <span id="codice-cp"></span>
+            </td>
+            <td>
+              <span id="costo"></span>
+            </td>
+          </tr>
+
+        </table>
+      </div>
+    </div>
+    <!-- inclusione js -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
